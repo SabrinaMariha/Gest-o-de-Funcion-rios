@@ -1,3 +1,5 @@
+import './IconButton.css'
+
 function IconButton({ icon, ariaLabel, ...props }) {
   return (
     <button

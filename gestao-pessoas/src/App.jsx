@@ -3,6 +3,7 @@ import './App.css'
 
 import Helper from './components/Modals/Helper'
 import helpHome from './assets/help-tela-boas-vindas-rh.png'
+import Sidebar from './components/Sidebar/Sidebar'
 
 function App() {
   const [showHelper, setShowHelper] = useState(true)
@@ -17,17 +18,15 @@ function App() {
       {showHelper && (
         <Helper
           image={helpHome}
-          label="Aqui você pode gerenciar suas tarefas"
+          title = "Bem-vindo(a)"
+          label="Estamos muito contentes de ter você em nossa plataforma de pagamentos. Aqui, você encontrará uma solução simples e segura para realizar seus trabalhos de uma forma simples, ágil e mais confiança!"
           onClose={handleCloseHelper}
         />
       )}
-
+      
+      <Sidebar/>
       <main className="content">
-        <h1>Bem-vinda 👋</h1>
-
-        <div className="card">
-          <p>Este é o conteúdo principal da página.</p>
-        </div>
+       
       </main>
 
     </div>

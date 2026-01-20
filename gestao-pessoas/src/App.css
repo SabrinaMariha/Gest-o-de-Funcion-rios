@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:  var(--font-primary);
   background: #f5f6fa;
 }
 
@@ -11,6 +11,17 @@ body {
   border-radius: 8px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  background-color: #f9f9f9;
+}
+
 
 h1 {
   text-align: center;
