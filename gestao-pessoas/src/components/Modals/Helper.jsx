@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import './Modal.css'
 import { X } from 'lucide-react'
-import {IconButton} from 
+import IconButton from '../Button/IconButton'
 
 
 function Helper({ image, label, onClose }) {
   return (
-    <div className="helper">
+    <div className="helper modal-content">
       <IconButton
         icon={<X size={18} />}
         ariaLabel="Fechar ajuda"

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 
-import Helper from './components/Helper'
-import helpHome from './assets/help-boas-vindas-rh.png'
+import Helper from './components/Modals/Helper'
+import helpHome from './assets/help-tela-boas-vindas-rh.png'
 
 function App() {
   const [showHelper, setShowHelper] = useState(true)
