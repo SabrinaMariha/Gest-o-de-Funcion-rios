@@ -14,14 +14,16 @@ body {
 .app-container {
   display: flex;
   min-height: 100vh;
+  overflow: visible; /* IMPORTANTE */
 }
+
 
 .content {
   flex: 1;
-  padding: 24px;
-  background-color: #f9f9f9;
+  position: relative;
+  z-index: 1;
+  overflow: visible;
 }
-
 
 h1 {
   text-align: center;
